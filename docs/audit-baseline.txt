@@ -1,0 +1,48 @@
+﻿F:\Projects\app42>npm audit --omit=dev                                                  
+# npm audit report
+
+@babel/runtime-corejs3  <7.26.10
+Severity: moderate
+Babel has inefficient RegExp complexity in generated code with .replace when transpiling named capturing groups - https://github.com/advisories/GHSA-968p-4wvh-cqc8
+fix available via `npm audit fix`
+node_modules/@babel/runtime-corejs3
+
+@remix-run/router  <=1.23.2
+Severity: high
+React Router vulnerable to XSS via Open Redirects - https://github.com/advisories/GHSA-2w69-qvjg-hvjx
+React Router's same-origin redirect with path starting // causes open redirect via protocol-relative URL reinterpretation - https://github.com/advisories/GHSA-2j2x-hqr9-3h42
+fix available via `npm audit fix`
+node_modules/@remix-run/router
+  react-router  6.0.0 - 7.17.0
+  Depends on vulnerable versions of @remix-run/router
+  node_modules/react-router
+    react-router-dom  6.0.0-alpha.0 - 6.30.2
+    Depends on vulnerable versions of @remix-run/router
+    Depends on vulnerable versions of react-router
+    node_modules/react-router-dom
+
+deepmerge  >=4.2.0
+deepmerge mergeObject() allows prototype poisoning of returned objects - https://github.com/advisories/GHSA-gcqx-w48m-w2h4
+No fix available
+node_modules/deepmerge
+  @tonconnect/ui  *
+  Depends on vulnerable versions of deepmerge
+  node_modules/@tonconnect/ui
+    @tonconnect/ui-react  *
+    Depends on vulnerable versions of @tonconnect/ui
+    node_modules/@tonconnect/ui-react
+
+
+store2  <2.14.4
+Severity: moderate
+Cross Site Scripting vulnerability in store2 - https://github.com/advisories/GHSA-w5hq-hm5m-4548
+fix available via `npm audit fix`
+node_modules/store2
+
+8 vulnerabilities (3 low, 2 moderate, 3 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
