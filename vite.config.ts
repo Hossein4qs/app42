@@ -11,6 +11,9 @@ export default defineConfig({
             filename: 'bundle-visualizer.html'
         })
     ],
+    server: {
+        allowedHosts: true
+    },
     build: {
         minify: 'esbuild',
         reportCompressedSize: false
