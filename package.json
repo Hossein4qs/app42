@@ -28,7 +28,7 @@
     "react-ga4": "^2.1.0",
     "react-imask": "^7.6.0",
     "react-multi-date-picker": "^4.5.1",
-    "react-router-dom": "^6.23.0",
+    "react-router-dom": "^7.18.5",
     "telegram": "^2.26.21",
     "tonapi-sdk-js": "^1.0.11"
   },
